@@ -19,7 +19,9 @@ use std::cell::{Cell, RefCell};
 
 mod ffi;
 
-pub mod message;
+// New experimental module.
+pub mod newdbus;
+
 pub mod prop;
 pub mod objpath;
 
