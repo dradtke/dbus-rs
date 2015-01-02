@@ -1,6 +1,6 @@
 [package]
 
-name = "dbus-rs"
+name = "dbus"
 version = "0.0.2"
 authors = ["David Henningsson <diwic@ubuntu.com>"]
 

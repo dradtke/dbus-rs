@@ -1,4 +1,4 @@
-#![feature(unsafe_destructor)]
+#![feature(macro_rules, unsafe_destructor)]
 
 extern crate libc;
 
@@ -19,6 +19,7 @@ use std::cell::{Cell, RefCell};
 
 mod ffi;
 
+pub mod message;
 pub mod prop;
 pub mod objpath;
 
@@ -591,6 +592,7 @@ impl Drop for Connection {
     }
 }
 
+/*
 #[cfg(test)]
 mod test {
     use super::{Connection, Message, BusType, MessageItem, ConnectionItem, NameFlag,
@@ -730,6 +732,5 @@ mod test {
         }
         c.remove_match(mstr.as_slice()).unwrap();
     }
-
 }
-
+*/
